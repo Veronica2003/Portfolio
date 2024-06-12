@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronica-Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        body {
+            background-color: black;
+            color: wheat;
+
+            .poetsen-one-regular {
+                font-family: "Poetsen One", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(32, 31, 31);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: None;
+            /*to remove bullets*/
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: None;
+            /*to make text normalafter making it link*/
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(224, 113, 54);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 50 100px;
+            align-items: center;
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+
+        }
+
+        .rightsection img {
+            width: 400px;
+            height: 500px;
+            margin: 60px;
+        }
+
+        .name {
+            color: yellow;
+        }
+
+        #element {
+            color: yellow;
+        }
+        
+        .secound {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            
+        }
+
+        .secound h1 {
+            font-size: 2.5rem;
+        }
+
+        .gray-text {
+            color: gray;
+        }
+
+        .secound .box {
+            background-color: white;
+            width: 150vh;
+            height: 2px;
+            margin: 110px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .secound .vertical {
+
+            height: 43px;
+            width: 2px;
+            background-color: white;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .image-icon {
+            position: relative;
+            height: 100px;
+            width: 80px;
+            top: -100px;
+            left: -32px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: -60px;
+            left: 2px;
+            width: 200px;
+            color: red;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: -50px;
+            left: 2px;
+            width: 200px;
+        }
+
+        .date {
+            color: aqua;
+        }
+
+        footer {
+
+            background-color: rgb(57, 55, 55);
+            height: 100px;
+
+        }
+
+        .footer {
+            display: flex;
+            margin: 100px 100px;
+        }
+
+        .button {
+            display: flex;
+        }
+
+        .leftsection .btn {
+            align-items: center;
+            background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+            border: 0;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 10px;
+            font-size: 16px;
+            font-weight: 700;
+            height: 54px;
+            justify-content: center;
+            letter-spacing: .4px;
+            line-height: 1;
+            max-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .third {
+            max-width: 80vw;
+            margin: auto;
+            height:170vh;
+        }
+
+        .third h1 {
+            font-size: 2.5rem;
+        }
+        .projcontainer{
+            display: flex;
+            justify-content: space-around;
+            margin: 50 100px;
+            align-items: center;
+        }
+
+        .projbox {
+            background-color: rgb(40, 39, 39);
+            border: 2px solid black;
+            height: 500px;
+            width: 300px;
+            margin: 20px 20px;
+            box-shadow: rgb(179, 192, 3) 0px 22px 70px 4px;
+            
+        }
+        .projbox:hover{
+            border: 2px solid black;
+            box-shadow:rgb(236, 5, 209) 0px 22px 70px 4px;
+            background-color: gray;
+            
+        }
+        .projimg{
+            position: relative;
+            height: 200px;
+            width: 280px;
+            margin: 10px 10px;
+        }
+        .proj-title{
+            margin: 5px 5px;
+            color:#fc894d
+        }
+        .proj-desc{
+            margin: 5px 5px;
+            color: aqua;
+            justify-self:center;
+        }
+        .p{
+            align-items: center;
+            background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+            border: 0;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 10px;
+            font-size: 16px;
+            font-weight: 700;
+            height: 54px;
+            justify-content: center;
+            letter-spacing: .4px;
+            line-height: 1;
+            max-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            position: relative;
+            left: 80px;
+            
+        }
+        .four {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            
+        }
+        .four h1 {
+            font-size: 2.5rem;
+        }
+        .skills{
+            display: flex;
+            justify-content: space-around;
+        }
+        .skbox{
+            justify-content: center;
+            margin: 40px 40px;
+            padding: auto;
+            border-radius: 10px;
+            border: 4px solid rgb(213, 22, 22);
+            background-color: white;
+            height: 95px;
+            width: 110px;
+        }
+        .skillimg{
+            position: relative;
+            height: 60px;
+            width: 70px;
+            top: 2px;
+            left:7px;
+        }
+        .sktext{
+            position: relative;
+            color: black;
+            font-weight: 400;
+            bottom: 5px;
+            text-align: center;
+        }
+        .five {
+            max-width: 80vw;
+            margin: auto;
+            height:170vh;
+        }
+
+        .five h1 {
+            font-size: 2.5rem;
+        }
+        .achibox{
+            display: flex;
+            justify-content: center;
+        }
+        .achimg{
+            margin: 20px 20px;
+            height: 100px;
+            width: 100px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="left">Veronica's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section class="first">
+                <div class="leftsection">Hi, this side <span class="name">Veronica</span> , I am an aspiring
+                    <span id="element"></span>
+                    <div class="button">
+                        
+                        <button class="btn" onclick="window.open('https://drive.google.com/file/d/1iTu3keJzpY1R862EkiV4zpASIAvyCZfk/view?usp=drivesdk', '_blank')">Download Resume</button>
+                        <button class="btn" onclick="window.open('https://github.com/Veronica2003', '_blank')">Visit Github</button>
+                    </div>
+                </div>
+
+                <div class="rightsection">
+                    <img src="female-developer.png" alt="">
+                </div>
+            </section>
+            <section class="secound">
+
+                <h1>Past Experience</h1>
+                <span class="gray-text">What I have done so far</span>
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-icon" src="ml-png.webp">
+                        <div class="vertical-title">
+                            <h2>Machine Learning and its Application in Cyber Security</h2>
+                        </div>
+                        <div class="vertical-desc"> <span class="date">May 2022 - July. 2022 </span>Organized by Dept.
+                            of Information Technology, IGDTUW – Learned and implemented various machine learning
+                            algorithms </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-icon" src="2082022.png">
+                        <div class="vertical-title">
+                            <h2>Research Experience</h2>
+                        </div>
+                        <div class="vertical-desc"><span class="date">Aug 2022 - Nov 2023 </span>Published a research
+                            paper on Prediction of loan Approval on the basis of credit score in the esteemed
+                            Springer InCITe 2023, Vol 1 </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-icon" src="Computer-vision.png">
+                        <div class="vertical-title">
+                            <h2>Computer Vision and Deep Learning Training</h2>
+                        </div>
+                        <div class="vertical-desc"><span class="date">June 2023 - July 2023 </span>Organized by Dept. of
+                            COE-AI, IGDTUW – Completed hands on projects focused on applying computer vision, deep
+                            learning algorithms and their frameworks</div>
+                    </div>
+
+                    <div class="vertical">
+                        <img class="image-icon" src="outlook_logo.png">
+                        <div class="vertical-title">
+                            <h2>Intern at Outlook</h2>
+                        </div>
+                        <div class="vertical-desc"><span class="date">May 2024 - July 2024 </span>Business Analyst Role
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section class="third">
+                <h1>Projects</h1>
+                <div class="projcontainer">
+                    <div class="projbox">
+                        <img src="pla.png" alt="" class="projimg">
+                        <div class="proj-title">
+                            <h2> Prediction of loan Approval on the basis of credit score</h2>
+                        </div>
+                        <div class="proj-desc">Implemented a comprehensive machine learning framework utilizing various algorithms including 
+                            logistic regression, decision trees, and neural networks to assess loan eligibility; achieved the highest  
+                            accuracy of 82.266% with Random Forest and Logistic Regression as compared to 69.95 accuracy in Decision Trees. </div>
+                        <button class="p" onclick="window.open('https://github.com/Veronica2003/Prediction_of_Loan_Approval_on_the_basis_of_credit_score', '_blank')"> Github</button>
+                    </div>
+                    <div class="projbox">
+                        <img src="2023-03-19.png" alt="" class="projimg">
+                        <div class="proj-title">
+                            <h2>Hostel Management Project</h2>
+                        </div>
+                        <div class="proj-desc"> Leveraged a combination of powerful tools, including OpenCV, MySQL, and SQLite3 to oversee hostel 
+                            operations, incorporating face recognition and a hash table data structure for precise student tracking.  </div>
+                            <button class="p" onclick="window.open('https://github.com/Veronica2003/Hostel-Management-Web-Application', '_blank')"> Github</button>
+                        </div>
+                    
+                    <div class="projbox">
+                        <img src="facep.png" alt="" class="projimg">
+                        <div class="proj-title">
+                            <h2>Face Recognition System</h2>
+                        </div>
+                        <div class="proj-desc"> utilized OpenCV to construct a sophisticated Face Recognition System capable of not only detecting faces but also
+                            maintaining a comprehensive database of individual </div>
+                            <button class="p" onclick="window.open('https://github.com/Veronica2003/Face_Recognition', '_blank')"> Github</button>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="projcontainer">
+                    <div class="projbox">
+                        <img src="weather.png" alt="" class="projimg">
+                        <div class="proj-title">
+                            <h2>Weather forecast command line tool</h2>
+                        </div>
+                        <div class="proj-desc"> Developed a command-line utility with the capability to provide weather forecasts for a user-specified number 
+                            of  days while also delivering critical disaster warnings and alerts using weather APIs. </div>
+                            <button class="p" onclick="window.open('https://github.com/Veronica2003/Weather-Wizard', '_blank')"> Github</button>
+                        </div>
+                    
+                    <div class="projbox">
+                        <img src="gan.png" alt="" class="projimg">
+                        <div class="proj-title">
+                            <h2>GAN Model</h2>
+                        </div>
+                        <div class="proj-desc"> Applied cutting-edge Generative Adversarial Networks (GANs) to produce visually stunning Monet-style 
+                            images, demonstrating proficiency in artificial intelligence and contributing to the forefront of artistic content generation </div>
+                            <button class="p" onclick="window.open('https://github.com/Veronica2003/Artigan_Tensorflow', '_blank')"> Github</button>
+                        </div>
+                        </div>
+                    
+                    
+                </div>
+            </section>
+            <section class="four">
+                <h1>Skills</h1>
+                <div class="skills">
+                    <!-- <img src="python-logo-2.png" alt="" class="skillimg">
+                    <img src="free-c-plus-plus-5728486-4781250.webp" alt="" class="skillimg">
+                    <img src="machine_learning-logo.png" alt="" class="skillimg">
+                    <img src="python-logo-2.png" alt="" class="skillimg">
+                    <img src="python-logo-2.png" alt="" class="skillimg"> -->
+                    <div class="skbox">
+                        <img src="01-1.png" alt="" class="skillimg">
+                        <div class="sktext">Python</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="free-c-plus-plus-5728486-4781250.webp" alt="" class="skillimg">
+                        <div class="sktext">C++</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="8345929.png" alt="" class="skillimg">
+                        <div class="sktext">Machine Learning</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="computer-vision-decision-eye-machine-ai-512.webp" alt="" class="skillimg">
+                        <div class="sktext">Computer Vision</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="html5.png" alt="" class="skillimg">
+                        <div class="sktext">HTML</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="badge-css-3-512.webp" alt="" class="skillimg">
+                        <div class="sktext">CSS</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="javascript-logo-javascript-icon-transparent-free-png.webp" alt="" class="skillimg">
+                        <div class="sktext">Javascript</div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="skills">
+                    <!-- <img src="python-logo-2.png" alt="" class="skillimg">
+                    <img src="free-c-plus-plus-5728486-4781250.webp" alt="" class="skillimg">
+                    <img src="machine_learning-logo.png" alt="" class="skillimg">
+                    <img src="python-logo-2.png" alt="" class="skillimg">
+                    <img src="python-logo-2.png" alt="" class="skillimg"> -->
+                    <div class="skbox">
+                        <img src="01-1.png" alt="" class="skillimg">
+                        <div class="sktext">Python</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="free-c-plus-plus-5728486-4781250.webp" alt="" class="skillimg">
+                        <div class="sktext">C++</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="8345929.png" alt="" class="skillimg">
+                        <div class="sktext">Machine Learning</div>
+                    </div>
+                    <div class="skbox">
+                        <img src="computer-vision-decision-eye-machine-ai-512.webp" alt="" class="skillimg">
+                        <div class="sktext">Computer Vision</div>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+            <section class="five">
+                <h1>Achievments</h1>
+                <div class="achibox">
+                    <img src="award_PNG12.png" alt="" class="achimg">
+                    <h2>1st prize at the Equinox Hackathon hosted by Celestial Biscuits, built Hostel Management System</h2>
+                    
+                </div>
+            </section>
+        </main>
+    </header>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Machine Learning Engineer', 'Software Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    
+</body>
+
+</html>
